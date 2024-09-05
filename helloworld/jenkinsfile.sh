@@ -4,7 +4,7 @@ pipeline{
 		stage('timeout'){
 			steps{
 				retry(3)
-				sh echo "Hello World"
+				sh "echo Hello World"
 				
 			}
 		
