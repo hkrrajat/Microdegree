@@ -6,6 +6,10 @@ pipeline{
 				sh '''
 				   echo "Hello world"
 				'''
+				sh '''
+				   df -kh .
+				   uptime
+				'''
 			}
 		
 		}
