@@ -1,11 +1,11 @@
 pipeline{
 	agent any
 	stages{
-		stage('timeout'){
+		stage('build'){
 			steps{
-				retry(3)
-				sh "echo Hello World"
-				
+				sh '''
+				   echo "Hello world"
+				'''
 			}
 		
 		}
