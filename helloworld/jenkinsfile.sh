@@ -9,6 +9,7 @@ pipeline{
 				sh '''
 				   df -kh .
 				   uptime
+				   date
 				'''
 			}
 		
